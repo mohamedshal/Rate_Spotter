@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RateSpotter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./rounded float.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <header>RATE SPOTTER</header>
+        <img class="spotter" src="rounded float.webp" alt="">
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/shiny/64.png" alt="flag">
+                        <select>
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fa-solid fa-right-left"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/EG/shiny/64.png" alt="flag">
+                        <select>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate"></div>
+            <button><span class="loader"></span></button>
+            <button id="btn" class="show">GET RATES!</button>
+        </form>
+    </div>
+</body>
+<script src="js/country-list.js"></script>
+<script src="js/main.js"></script>
+</html>
